@@ -709,6 +709,9 @@ Es zeigt sich, dass das Echo-Protokoll ein durchaus komplexes Netzwerk abbilden 
 Cryptographic Discovery beschreibt die Methode eines das Echo ergänzenden Protokolls, Nodes in einem Echo-Netzwerk zu finden. Das Echo-Protokoll wird damit um eine weitere sinnvolle Methode ergänzt, wenn sie nicht sogar bedeutender ist, als das Echo selbst. Cryptographic Discovery ist in den bestehenden Clienten wie GoldBug, Spot-on oder auch dem Chat-Server für das Betriebssystem Android, SmokeStack, auf der Code Basis implementiert. Der Source Code und seine Dokumentation legt die Methode entsprechend dar. Cryptographic Discovery kann z.B. einen Distributed Hash Table (DHT) ersetzen, um einen Freund im Netzwerk zu finden. Eine weitergehende Publikation speziell zu diesem Thema als Anlage zum Quellcode der Entwicklung ist in Vorbereitung. 
 
 
+Wenn ein Nutzer eine Nachricht an einen regulären Echo-Server sendet, dann weiss der Server nicht, für wen diese Nachricht bestimmt ist und sendet sie daher an jeden verbundenen Knotenpunkt. Einer von allen diesen ist der Richtige, für den die Nachricht bestimmt ist. Der Richtige sendet dann die Nachricht an den richtigen Empfänger weiter. Die Alternative ist, dass der Knotenpunkt meine Instanz kennt in einer virtuellen cryptographischen Software-Struktur. Diese Knotenpunkte sind separierte Prozesse. Denn dann wird der Knotenpunkt des Nutzers die Nachricht zu Knotenpunkt A und Knotenpunkt Z senden - anstelle von Knotenpunkt A durch Knotenpunkt Z. Kontenpunkten sind sich dann anderer Knotenpunkte bewusst basierend auf einem Cryptographischen Discovery Prozess mit cryptographischen Identitäten. Das ist eine komplexe Sache - aber bereits in dem mobilen Klienten von GoldBug: Smoke Messenger, integriert. 
+
+
 ## 5 Einen ersten Setup einrichten – z.B. mit dem Wizard
 
 Der erste initiale Setup der Software ist mit wenigen Schritten ganz einfach, 
